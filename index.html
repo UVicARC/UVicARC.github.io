@@ -107,8 +107,9 @@
 
 					<section class="spotlight style1 orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right" id="join">
 						<div class="content">
-								<h3>Let us know how you'd like to join</h3>
-								<form method="post" action="#">
+								<h3>Let us know how you'd like to join. Shoot us a message at</h3>
+								<h3>uvic.arc@gmail.com</h3>
+								<!--<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -124,9 +125,9 @@
 										</div>
 									</div>
 									<ul class="actions special">
-										<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+										<li><input type="button" name="submit" id="submit" value="Send Message" onclick="sendJoinMsg()"/></li>
 									</ul>
-								</form>
+								</form>-->
 						</div>
 						<div class="content">
 							<h2>Join us</h2>
@@ -140,7 +141,7 @@
 							</p>
 
 							<ul class="actions stacked">
-								<li><a href="#" class="button big wide smooth-scroll-middle">Support our club</a></li>
+								<!--<li><a href="#" class="button big wide smooth-scroll-middle">Support our club</a></li>-->
 							</ul>
 						</div>
 					</section>
@@ -156,6 +157,7 @@
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
 						<div class="inner">
+							<!--
 							<ul class="icons">
 								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -163,6 +165,7 @@
 								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
 							</ul>
+							-->
 						</div>
 					</footer>
 
@@ -176,6 +179,29 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<!--
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script>
+
+				function sendJoinMsg() {
+					sendEmail("Test", "Hello world");
+				};
+
+				function sendEmail(subject, body) {
+					Email.send({
+				    Host : "smtp.gmail.com",
+				    Username : "uvic.arc@gmail.com",
+				    Password : "rotaryrx8",
+				    To : 'uvic.arc@gmail.com',
+				    From : "uvic.arc@gmail.com",
+				    Subject : subject,
+				    Body : body
+				    }).then(
+				        message => alert("Message sent!")
+				    );
+				}
+			</script>
+			-->
 
 	</body>
 </html>
